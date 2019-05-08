@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+          integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="findThePrecious.css">
+    <title>FindThePrecious.com</title>
+</head>
+<body>
+
+<!-- DEBUT CONTAINER -->
+
+<div class="container-fluid">
+
+    <!-- NAVBAR -->
+    <header>
+        <nav class="navbar navbar-expand-lg navColors ">
+            <h1>FindThePrecious.com</h1>
+            <a class="navbar-brand" href="#"> <img src="pictures/logo.png"> </a>
+            <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarText"
+                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link underLine" href="#">Fellows<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">| The Ring</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">| Get my reward</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">| Best hunters</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">| Join the army</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">| Contact us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- DEBUT DU MAIN -->
+    <main class="container">
+
+        <div class="row align-items-center text-align-center">
+            <div class="orangeRing"></div>
+            <div class="text">My precious</div>
+            <div class="orangeRing"></div>
+        </div>
+
+        <div class="row align-items-center text-align-center">
+            <div class="yellowRing"></div>
+            <div class="text">The one ring</div>
+        </div>
+
+        <div class="row align-items-center text-align-center">
+            <?php for ($i = 0; $i < 7; $i++): ?>
+                <div class="multiRing-<?= $i ?>"></div>
+            <?php endfor ?>
+            <div class="col-12 text">Please find it !</div>
+        </div>
+
+        <!-- FIN DU MAIN -->
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="navColors">
+        <table class="table table-borderless">
+            <tbody>
+            <tr>
+                <td>About us</td>
+                <td>FAQ</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>Fellows</td>
+                <td>Reward conditions</td>
+                <td>Sauron4Ever.com</td>
+            </tr>
+            <tr>
+                <td>Join our army</td>
+                <td>Legal mentions</td>
+                <td>Follow him also on twitter</td>
+            </tr>
+            </tbody>
+        </table>
+    </footer>
+
+    <!-- FIN CONTAINER -->
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+$backgroundColor: #F2741F;
+$includeTextColor: white;
+$borderSize: 1px;
+$borderColor: grey;
+$border: solid;
+$spaceMargin: 5vw;
+
+@font-face {
+	font-family: 'textFont';
+	src: url('font/anicm___.ttf');
+}
+
+@font-face {
+	font-family: 'titleFont';
+	src: url('font/partybusiness.ttf');
+}
+
+@mixin ring($size, $borderSize, $color) {
+	width: $size;
+	height: $size;
+	border-radius: 100% 100% 100% 100%;
+	border: $borderSize $border $color;
+}
+
+.orangeRing {
+	@include ring(50px, 3px, orange);
+}
+
+.yellowRing {
+	@include ring(100px, 7px, gold);
+}
+
+@for $i from 1 through 6 {
+	.multiRing-#{$i} {
+		@include ring(30px*$i, 2px, black);
+		position: relative;
+		left: 3vw - $i;
+	}
+}
+
+.text {
+	font-family: 'textFont';
+}
+
+.navColors {
+	background-color: $backgroundColor;
+	font-family: textFont;
+	a {
+		color: $includeTextColor;
+		text-align: left;
+	}
+}
+
+h1 {
+	font-size: 1.2em;
+	margin-bottom: 0px;
+	display: none;
+}
+
+.underLine {
+	text-decoration: underline;
+}
+
+footer {
+	font-family: textFont;
+	margin-top: $spaceMargin;
+}
+
+nav {
+	border-bottom: $border $borderColor $borderSize;
+	margin-bottom: $spaceMargin;
+}
+
+footer {
+	border-top: $border $borderColor $borderSize;
+	color: $includeTextColor;
+}
+
+body {
+	background-image:url(pictures/bg_light.png);
+}

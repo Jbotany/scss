@@ -1,0 +1,117 @@
+@font-face {
+    font-family: "textFont";
+    src: url("font/anicm___.ttf");
+}
+@font-face {
+    font-family: "titleFont";
+    src: url("font/partybusiness.ttf");
+}
+.orangeRing {
+    width: 50px;
+    height: 50px;
+    border-radius: 100% 100% 100% 100%;
+    border: 3px solid orange;
+}
+
+.yellowRing {
+    width: 100px;
+    height: 100px;
+    border-radius: 100% 100% 100% 100%;
+    border: 7px solid gold;
+}
+
+.multiRing-1 {
+    width: 30px;
+    height: 30px;
+    border-radius: 100% 100% 100% 100%;
+    border: 2px solid black;
+    position: relative;
+    left: 2vw;
+}
+
+.multiRing-2 {
+    width: 60px;
+    height: 60px;
+    border-radius: 100% 100% 100% 100%;
+    border: 2px solid black;
+    position: relative;
+    left: 1vw;
+}
+
+.multiRing-3 {
+    width: 90px;
+    height: 90px;
+    border-radius: 100% 100% 100% 100%;
+    border: 2px solid black;
+    position: relative;
+    left: 0vw;
+}
+
+.multiRing-4 {
+    width: 120px;
+    height: 120px;
+    border-radius: 100% 100% 100% 100%;
+    border: 2px solid black;
+    position: relative;
+    left: -1vw;
+}
+
+.multiRing-5 {
+    width: 150px;
+    height: 150px;
+    border-radius: 100% 100% 100% 100%;
+    border: 2px solid black;
+    position: relative;
+    left: -2vw;
+}
+
+.multiRing-6 {
+    width: 180px;
+    height: 180px;
+    border-radius: 100% 100% 100% 100%;
+    border: 2px solid black;
+    position: relative;
+    left: -3vw;
+}
+
+.text {
+    font-family: "textFont";
+}
+
+.navColors {
+    background-color: #F2741F;
+    font-family: textFont;
+}
+.navColors a {
+    color: white;
+    text-align: left;
+}
+
+h1 {
+    font-size: 1.2em;
+    margin-bottom: 0px;
+    display: none;
+}
+
+.underLine {
+    text-decoration: underline;
+}
+
+footer {
+    font-family: textFont;
+    margin-top: 5vw;
+}
+
+nav {
+    border-bottom: solid grey 1px;
+    margin-bottom: 5vw;
+}
+
+footer {
+    border-top: solid grey 1px;
+    color: white;
+}
+
+body {
+    background-image: url(pictures/bg_light.png);
+}
